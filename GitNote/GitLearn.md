@@ -72,9 +72,33 @@ git commit [-m "message"]  将暂存区的文件提交到本地仓库(Repository
 
 git push 将本地仓库的文件推送到远程仓库(Remote:GitHub,Gitee)
 
+git push <远程主机名> <本地分支名>:<远程分支名>
+
+git push -f 可以强制推送
+
 git status [filename] 查看某个文件的状态
 
 git status 查看所有文件状态
+
+# 分支基本操作
+
+git branch  列出所有本地分支
+
+git branch -r   列出所有远程分支
+
+git branch [branch-name]    新建一个分支，但依然停留在当前分支
+
+git checkout [branchname]     切换分支
+
+git checkout -b [branch]     新建一个分支，并切换到该分支
+
+git merge [branch]   合并指定分支到当前分支
+
+git branch -d [branch-name]   删除分支
+
+git push origin --delete [branch-name]  删除远程分支
+
+git branch -dr [remote/branch]
 
 
 
